@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  pathPrefix: `/path/to/my/site`,
   siteMetadata: {
     title: 'Gatsby Starter MDX Basic',
     description:

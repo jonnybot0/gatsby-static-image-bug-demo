@@ -25,9 +25,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "start": "npm run develop",
+    "serve": "gatsby serve",
+    "demoprefix": "gatsby build --prefix-paths; mv public site; mkdir -p public/path/to/my/site; mv site public/path/to/my/; npm run serve",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
